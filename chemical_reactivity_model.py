@@ -1,4 +1,6 @@
 import numpy as np
+# Ashira Sahunalu April 15, 2026
+# chemical_reactivity_model.py 
 
 # =============================================================================
 # CHEMICAL REACTIVITY MODEL
@@ -9,7 +11,6 @@ import numpy as np
 # Press Enter to accept the default value shown in brackets.
 # Default values correspond to the Haber Process (N2 + 3H2 → 2NH3).
 
-# Helper: prompt until a valid float is entered or Enter is pressed for default.
 def prompt_float(message, default):
     while True:
         raw = input(message).strip()
@@ -36,7 +37,7 @@ T_start        = prompt_float("  T_start (K)                     [298]: ",  298.
 T_end          = prompt_float("  T_end   (K)                     [800]: ",  800.0)
 T_step         = prompt_float("  T_step  (K)                     [100]: ",  100.0)
 
-R = 8.314    # Universal gas constant [J/(mol·K)] — not user-configurable
+R = 8.314    # Universal gas constant [J/(mol·K)] — not user-configurable / preset
 
 
 # --- SECTION 2: EXPLICIT UNIT CONVERSION ---

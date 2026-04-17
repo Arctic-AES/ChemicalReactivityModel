@@ -1,7 +1,6 @@
 # Chemical Reactivity Model
 
-A Python command-line tool that models the thermodynamic viability, spontaneity, and
-equilibrium of a chemical reaction across a temperature gradient.
+A Python command-line tool that predicts how a chemical reaction behaves at different temperatures. It calculates whether a reaction will happen on its own (spontaneity) and where it eventually balances out (equilibrium).
 
 ---
 
