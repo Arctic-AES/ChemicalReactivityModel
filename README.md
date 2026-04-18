@@ -58,7 +58,7 @@ The script runs in six explicit sections. Each one corresponds to a distinct ste
 thermodynamics problem.
 
 **1. User Inputs**
-Collects the values above. `R = 8.314 J/(mol·K)` is hard-coded and not configurable.
+Collects the values above. `R = 8.314 J/(mol·K)` is the hard-coded Universal or Ideal Gas Constant.
 
 **2. Unit Conversion**
 Converts ΔH from kJ/mol to J/mol (`× 1000`) before any calculations begin. Unit mismatch

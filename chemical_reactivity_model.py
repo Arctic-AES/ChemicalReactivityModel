@@ -145,9 +145,9 @@ print(f"  delta_S_univ (J/mol·K)  : {delta_S_univ}")
 crossover_indices = np.where(delta_S_univ < 0)[0]
 if crossover_indices.size > 0:
     crossover_T = T[crossover_indices[0]]
-    print(f"\n  ⚠ Non-spontaneous (delta_S_univ < 0) from T = {crossover_T} K onward")
+    print(f"\n   Non-spontaneous (delta_S_univ < 0) from T = {crossover_T} K onward")
 else:
-    print(f"\n  ✓ Spontaneous (delta_S_univ > 0) across entire gradient")
+    print(f"\n   Spontaneous (delta_S_univ > 0) across entire gradient")
 
 print(f"\n{'─'*62}")
 print(f"  FEATURE 2 — GIBBS FREE ENERGY")
