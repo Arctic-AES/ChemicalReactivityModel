@@ -1,4 +1,5 @@
 import numpy as np
+
 # Ashira Sahunalu April 15, 2026
 # chemical_reactivity_model.py 
 
@@ -37,17 +38,16 @@ T_start        = prompt_float("  T_start (K)                     [298]: ",  298.
 T_end          = prompt_float("  T_end   (K)                     [800]: ",  800.0)
 T_step         = prompt_float("  T_step  (K)                     [100]: ",  100.0)
 
-R = 8.314    # Universal gas constant [J/(mol·K)] — not user-configurable / preset
+R = 8.314    # Universal gas constant [J/(mol·K)]
 
 
 # --- SECTION 2: EXPLICIT UNIT CONVERSION ---
 # delta_H must be in Joules to match the units of delta_S and R.
-# Skipping this step is the single most common error in Gen Chem 2 problems.
 
 delta_H_sys_J = delta_H_sys_kJ * 1000     # kJ/mol  →  J/mol
 
 
-# --- SECTION 3: THERMAL GRADIENT (NumPy Array) ---
+# --- SECTION 3: THERMAL GRADIENT ---
 # Build the temperature array from user-supplied start, end, and step values.
 
 T = np.arange(T_start, T_end + 1, T_step)
