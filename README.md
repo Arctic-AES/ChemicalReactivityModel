@@ -165,7 +165,7 @@ Inputs
 
 ## Dependencies
 
-Python 3 and NumPy only. No pandas, no plotting libraries.
+Python 3 and NumPy
 
 For equation derivations and a hand-worked example at 298 K, see
 [`CHEMISTRY_NOTES.md`](CHEMISTRY_NOTES.md).
