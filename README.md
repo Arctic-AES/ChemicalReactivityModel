@@ -62,7 +62,7 @@ Collects the values above. `R = 8.314 J/(mol·K)` is the hard-coded Universal or
 
 **2. Unit Conversion**
 Converts ΔH from kJ/mol to J/mol (`× 1000`) before any calculations begin. Unit mismatch
-between kJ and J is the most common source of error in Gen Chem 2 thermodynamics.
+between kJ and J is the most common source of error in thermodynamics.
 
 **3. Thermal Gradient**
 Builds a NumPy array from `T_start` to `T_end` in steps of `T_step`. All three features
